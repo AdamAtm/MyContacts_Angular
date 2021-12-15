@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">Nom complet</label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    <div>
+        <label for="pseudo">Pseudo</label>
+        <input id="pseudo" type="text" formControlName="pseudo">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email">
+    </div>
+    <button type="submit" [disabled]="!form.valid">Ajouter</button>
+</form>

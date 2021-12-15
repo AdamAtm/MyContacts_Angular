@@ -1,0 +1,12 @@
+<div>
+    <h1>{{contact.name}}</h1>
+    <p>{{contact.pseudo}}</p>
+    <p>{{contact.email}}</p>
+    <br>
+    <input 
+        type='text' 
+        [defaultValue]="contact.name" 
+        placeholder="Nom complet"
+        (input)="onNameChange($event)"
+    >
+</div>
